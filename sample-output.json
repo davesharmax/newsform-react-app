@@ -1,8 +1,7 @@
-import React, { Component } from 'react'
-import NewsTtem from './NewsTtem'
-
-export class News extends Component {
-    article=[
+{
+    "status": "ok",
+    "totalResults": 9,
+    "articles": [
         {
             "source": {
                 "id": "nhl-news",
@@ -121,36 +120,4 @@ export class News extends Component {
             "content": null
         }
     ]
-    constructor(){
-        super();
-        this.state={
-            articles : this.article,
-            loading: false
-
-        }
-    }
-  render() {
-    return (
-      <div className='container my-3'>
-        <h2>Newsform - Top Headlines</h2>
-        {this.state.articles.map((element)=> {})}
-        <div className="row">
-          {this.state.articles.map((element)=> {
-                return  <div className="col-md-4 my-2">
-                        <NewsTtem key = {element.url} title = {element.title.slice(0,44)} description={element.description.slice(0,88)} imgUrl={element.urlToImage} newsUrl={element.url}/>
-                        </div>
-          })}  
-            <div className="col-md-4">
-            <NewsTtem tytle = "myTitle" description="mydesc" imgUrl="" newsUrl="toso"/>
-            </div>
-
-
-        </div>
-
-
-      </div>
-    )
-  }
 }
-
-export default News
