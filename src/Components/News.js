@@ -2,133 +2,48 @@ import React, { Component } from 'react'
 import NewsTtem from './NewsTtem'
 
 export class News extends Component {
-    article=[
-        {
-            "source": {
-                "id": "nhl-news",
-                "name": "NHL News"
-            },
-            "author": "Dan Rosen",
-            "title": "Rangers rebuild depth despite having little salary cap space",
-            "description": "The New York Rangers spent Saturday rebuilding their depth despite having little salary cap space to do so.",
-            "url": "https://www.nhl.com/news/rangers-rebuild-depth-with-little-salary-cap-space/c-345177378",
-            "urlToImage": "https://cms.nhl.bamgrid.com/images/photos/345178018/1024x576/cut.jpg",
-            "publishedAt": "2023-07-02T00:32:53Z",
-            "content": "The New York Rangers spent Saturday rebuilding their depth despite having little salary cap space to do so.It was quite the dip into the bargain bin to find potential gems for a team that believes it… [+5385 chars]"
-        },
-        {
-            "source": {
-                "id": "next-big-future",
-                "name": "Next Big Future"
-            },
-            "author": "Brian Wang",
-            "title": "What SpaceX Starship Will Look Like When Hot Staging | NextBigFuture.com",
-            "description": "Tony Bela of Infographic News has put together images of what the SpaceX Super Heavy Starship will look like while hot staging.",
-            "url": "https://www.nextbigfuture.com/2023/07/what-spacex-starship-will-look-like-when-hot-staging.html",
-            "urlToImage": "https://nextbigfuture.s3.amazonaws.com/uploads/2023/07/Screen-Shot-2023-07-01-at-1.36.00-PM.jpg",
-            "publishedAt": "2023-07-01T20:51:56Z",
-            "content": "Brian Wang is a Futurist Thought Leader and a popular Science blogger with 1 million readers per month. His blog Nextbigfuture.com is ranked #1 Science News Blog. It covers many disruptive technology… [+593 chars]"
-        },
-        {
-            "source": {
-                "id": "next-big-future",
-                "name": "Next Big Future"
-            },
-            "author": "Brian Wang",
-            "title": "SpaceX Starship Static Fire and Launchpad Plate Progress | NextBigFuture.com",
-            "description": "SpaceX Starship had a static fire test of its six engines.",
-            "url": "https://www.nextbigfuture.com/2023/07/spacex-starship-static-fire-and-launchpad-plate-progress.html",
-            "urlToImage": "https://nextbigfuture.s3.amazonaws.com/uploads/2023/07/Screen-Shot-2023-07-01-at-1.41.05-PM.jpg",
-            "publishedAt": "2023-07-01T20:48:41Z",
-            "content": "Brian Wang is a Futurist Thought Leader and a popular Science blogger with 1 million readers per month. His blog Nextbigfuture.com is ranked #1 Science News Blog. It covers many disruptive technology… [+593 chars]"
-        },
-        {
-            "source": {
-                "id": "ars-technica",
-                "name": "Ars Technica"
-            },
-            "author": "Stephen Clark",
-            "title": "Europe’s Euclid telescope launched to study the dark Universe",
-            "description": "SpaceX is filling in for ESA as European rockets face delays.",
-            "url": "https://arstechnica.com/space/2023/07/europes-euclid-telescope-launched-to-study-the-dark-universe/",
-            "urlToImage": "https://cdn.arstechnica.net/wp-content/uploads/2023/07/IMG_0440-760x380.jpg",
-            "publishedAt": "2023-07-01T16:25:22+00:00",
-            "content": "Enlarge/ SpaceX's Falcon 9 rocket soars through the sky over Cape Canaveral with Europe's Euclid space telescope.\r\n240 with \r\nA European Space Agency telescope launched Saturday on top of a SpaceX Fa… [+10638 chars]"
-        },
-        {
-            "source": {
-                "id": "next-big-future",
-                "name": "Next Big Future"
-            },
-            "author": "Brian Wang",
-            "title": "Japan Considering Military-Grade SpaceX STARLINK | NextBigFuture.com",
-            "description": "The Japan Self-Defense Forces (JSDF) has been testing SpaceX's Starlink satellite communication (satcom) services since March, a spokesperson for the Japanese",
-            "url": "https://www.nextbigfuture.com/2023/06/japan-considering-a-military-grade-spacex-starlink.html",
-            "urlToImage": "https://nextbigfuture.s3.amazonaws.com/uploads/2022/09/starlinksolararry-1024x555.jpeg",
-            "publishedAt": "2023-07-01T05:01:20Z",
-            "content": "Brian Wang is a Futurist Thought Leader and a popular Science blogger with 1 million readers per month. His blog Nextbigfuture.com is ranked #1 Science News Blog. It covers many disruptive technology… [+593 chars]"
-        },
-        {
-            "source": {
-                "id": "next-big-future",
-                "name": "Next Big Future"
-            },
-            "author": "Brian Wang",
-            "title": "Virgin Galactic’s Has Its First Commercial Spaceflight | NextBigFuture.com",
-            "description": "Virgin Galactic 01 carried 13 research payloads and three crew members from the Italian Air Force and the National Research Council of Italy – congratulations",
-            "url": "https://www.nextbigfuture.com/2023/06/virgin-galactics-has-its-first-commercial-paceflight.html",
-            "urlToImage": "https://nextbigfuture.s3.amazonaws.com/uploads/2023/06/Screen-Shot-2023-06-30-at-10.12.47-AM-1.jpg",
-            "publishedAt": "2023-06-30T17:18:23Z",
-            "content": "Virgin Galactic 01 carried 13 research payloads and three crew members from the Italian Air Force and the National Research Council of Italy congratulations to all the team. And congratulazioni ai me… [+1797 chars]"
-        },
-        {
-            "source": {
-                "id": "the-next-web",
-                "name": "The Next Web"
-            },
-            "author": "Linnea Ahlgren",
-            "title": "3D-printed rocket engine revs up for orbital launch in Scotland",
-            "description": "Edinburgh-based aerospace startup Skyrora announced yesterday it had commenced a series of full-duration tests of its updated 3D-printed 70kN engine. \r\n\r\nThe new design features an ...",
-            "url": "http://thenextweb.com/news/3d-printed-rocket-engine-revs-up-orbital-launch-scotland",
-            "urlToImage": "https://img-cdn.tnwcdn.com/image/tnw-blurple?filter_last=1&fit=1280%2C640&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F06%2F70-kn-engine-1-1-1024x576-1-e1687258568667.jpg&signature=e504e335f8babf0e24721de9198d4fb6",
-            "publishedAt": "2023-06-20T12:00:47Z",
-            "content": "Edinburgh-based aerospace startup Skyrora announced yesterday it had commenced a series of full-duration tests of its updated 3D-printed 70kN engine. \r\nThe new design features an improved engine cool… [+3908 chars]"
-        },
-        {
-            "source": {
-                "id": "new-scientist",
-                "name": "New Scientist"
-            },
-            "author": null,
-            "title": "SpaceX launches Starlink V2 satellites to increase internet capacity",
-            "description": "A new generation of Starlink’s internet satellites will orbit at low altitudes and eventually re-enter Earth’s atmosphere, limiting the amount of clutter in orbit",
-            "url": "https://www.newscientist.com/article/2361798-spacex-launches-starlink-v2-satellites-to-increase-internet-capacity/",
-            "urlToImage": "https://images.newscientist.com/wp-content/uploads/2023/02/28135738/SEI_146185094.jpg",
-            "publishedAt": "2023-02-28T00:00:00Z",
-            "content": "By Chris Stokel-Walker\r\nThe Starlink launch at Cape Canaveral, Florida, on 27 February 2023\r\nSpaceX\r\nA rocket carrying 21 new generation Starlink satellites successfully launched into orbit at 6:13pm… [+2305 chars]"
-        },
-        {
-            "source": {
-                "id": "national-geographic",
-                "name": "National Geographic"
-            },
-            "author": "Nadia Drake",
-            "title": "How these feuding map-makers shaped our fascination with Mars",
-            "description": "One was an artist who loved space. His rival was a bold professional astronomer. Their race to map the red planet sparked decades of science and speculation.",
-            "url": "https://www.nationalgeographic.com/science/2021/02/how-feuding-map-makers-shaped-our-fascination-with-mars.html",
-            "urlToImage": "https://pmdvod.nationalgeographic.com/NG_Video/788/579/smpost_1612381336455.jpg",
-            "publishedAt": "2021-02-17T14:37:21.3706142Z",
-            "content": null
-        }
-    ]
+
     constructor(){
         super();
         this.state={
-            articles : this.article,
+            articles : [],
             loading: false
 
         }
     }
+    async componentDidMount(){
+        
+        let url ="https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=9c042074c72843b49daa6784ab0cb2a4"
+        let data = await fetch(url);
+        let parsedata = await data.json();
+        this.setState({
+            articles: parsedata.articles
+        })
+    }
+    handelPrevClick= async ()=>{
+        let url =`https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=9c042074c72843b49daa6784ab0cb2a4&page=${this.state.page -1}`
+        let data = await fetch(url);
+        let parsedata = await data.json();
+        this.setState({
+            page: this.state.page -1,
+            articles: parsedata.articles
+        })
+
+
+
+    }
+    handelNextClick= async ()=>{
+        
+        let url =`https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=9c042074c72843b49daa6784ab0cb2a4&page=${this.state.page +1}`;
+        let data = await fetch(url);
+        let parsedata = await data.json();
+        this.setState({
+            page: this.state.page +1,
+            articles: parsedata.articles
+        })
+
+    }
+
   render() {
     return (
       <div className='container my-3'>
@@ -137,14 +52,16 @@ export class News extends Component {
         <div className="row">
           {this.state.articles.map((element)=> {
                 return  <div className="col-md-4 my-2">
-                        <NewsTtem key = {element.url} title = {element.title.slice(0,44)} description={element.description.slice(0,88)} imgUrl={element.urlToImage} newsUrl={element.url}/>
+                        <NewsTtem key = {element.url} title = {element.title?element.title.slice(0,44):""} description={element.description?element.description.slice(0,88): ""} imgUrl={element.urlToImage} newsUrl={element.url}/>
                         </div>
-          })}  
-            <div className="col-md-4">
+          })}              <div className="col-md-4">
             <NewsTtem tytle = "myTitle" description="mydesc" imgUrl="" newsUrl="toso"/>
             </div>
 
-
+        </div>
+        <div className='container d-flex justify-content-between my-3'>
+            <button type="button" disabled={this.state.page<=1} class="btn btn-dark" onClick={this.handelPrevClick}>&larr; Prev</button>
+            <button type="button" class="btn btn-dark" onClick={this.handelNextClick}>Next &rarr;</button>
         </div>
 
 
