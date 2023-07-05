@@ -21,14 +21,18 @@ export class Navbar extends Component {
           <a className="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/">Link</a>
+          <a className="nav-link" href="/">sports</a>
         </li>
-        <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-         
+        <li className="nav-item">
+          <a className="nav-link" href="/">health</a>
+        </li>      
+          <li className="nav-item">
+          <a className="nav-link" href="/">technology</a>
         </li>
+        <li className="nav-item">
+          <a className="nav-link" href="/">science</a>
+        </li>
+
 
       </ul>
       <form className="d-flex" role="search">
